@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:#989898;
+  }
+
+    h1{font-size: 30px;}
+     h2{font-size: 24px;}
+     h3{font-size: 22px;}
+     h4{font-size: 20px;}
+     h5{font-size: 18px;}
+    h1{
+      font-weight: bold;}
+      /* padding: 15px; */
+      h1,h2,h3,h4,h5{
+          color: #4F4F4F;
+      }
+
+
+header {
+    display: flex;
+    height: 64px;                     
+}
+
+.titleMenu {
+    color: #9f9f9f;
+    font-weight:600;
+}
+
+.titleMenu span {
+    color: #01161E;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;            
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;            
+}
+
+.desktop a {
+    padding-left:16px;             
+    text-decoration: none;
+    color:#515151;
+}
+
+
+.main {
+    display: flex;
+   position: relative;
+    height:auto;
+    width:100%;
+
+   /* top: 60px;*/
+  }
+  .leftcontent {
+    display: flex;
+    width: 60%;
+    margin:32px 24px;
+  }
+  .rightcontent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+   /* margin: 35px auto;*/
+    justify-content: center;
+  }
+  .leftcontent img{
+     width:100%;
+    height:auto;
+    
+   }
+   .text-style {
+    justify-content: center;
+    text-align: left;
+ /*   padding-right: 75px;*/
+    
+  }
+   
+   .rightcontent h1{
+  /*  font-size: 40px;
+    color:darkgray;*/
+    padding-bottom:16px;  
+  }
+  .rightcontent h4{
+    padding-bottom:8px;
+  
+  }
+  .rightcontent button{
+    padding-top:8px;
+    background-color:rgb(26,41,48);
+    color: rgb(250,250,250);
+    text-align: center;
+    width:60%;}
+    
+  /*  padding:20px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 200;
+  }*/
+  button:hover {
+    background-color: rgb(250,250,250);
+    color: rgb(26,41,48);
+    font-weight: 300;
+  }
+  
+
+/* Remove mobile icon */
+.mobile {
+    display: none;
+}
+
+/* middle section */
+.middle{
+    display: flex;
+    align-items:center;
+ /*  position: relative;*/
+
+   margin:32px 24px;
+}
+
+
+   /* top: 60px;*/
+
+.leftcontainer {
+  
+  width: 60%;
+ /*margin:32px 24px;*/
+  
+}
+.box {
+  display: flex;
+  flex-direction: column;
+ /* margin: 35px auto;*/
+ /* justify-content: center;*/
+ /* align-items:center;*/
+ /* margin-left:16px;
+  margin-right: 24px;*/
+}
+.leftcontainer img{
+  width:100%;
+  padding-bottom: 32px;
+
+
+}
+.leftcontainer h2{
+    padding-bottom: 32px;
+}
+/*p.quote{
+    padding-right: 16px;
+}*/
+.rightcontainer{
+    display:flex;
+   flex-direction: column;
+    width:40%;
+ /*   align-items: center;*/
+  /*  padding:16px 0px 32px 0px;*/
+}
+.box img.desktop{
+    
+    width:35%;
+    height:auto;
+    margin-left:16px;
+    margin-top:16px;
+
+}
+div text{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    
+}
+/*.box desktop{
+    width:100%;
+    display:block;
+}*/
+.box img.mobile{
+    display:none;
+}
+
+/* Section 3 Start learning Section */
+.flex-column{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+h2{
+    text-align: center;
+    padding-top:32px;
+    padding-bottom:32px;
+}
+.courses-image-style img{
+    display:flex;
+    width: 200px;
+    height: 200px;
+  /*  margin:32px 72px;*/
+}
+
+.courses-image-style h4 {
+    padding: 16px 0px 16px 16px;
+}
+
+.coursessection
+{ background-color: #515151;
+    width:100%;
+ /*   width: 1000px;*/
+    margin: auto;
+    padding-top: 32px;
+    padding-bottom:32px;
+}
+div h2{
+    text-align:center;
+    padding-top:32px;
+    padding-bottom:32px;
+}
+
+.courses-image-style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses-image-style div {
+    margin:10px;
+}
+.text-center{
+    text-align:center;
+}
+
+
+
+
+
+@media only screen and (max-width:720px) 
+{
+    /* Do Not Display */
+    .desktop, .logo {
+      display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;          
+      }
+}
